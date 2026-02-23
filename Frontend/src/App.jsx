@@ -1,0 +1,23 @@
+import { useState } from "react";
+import FacialExpression from "./components/FacialExpression";
+import MoodSongs from "./components/MoodSongs";
+
+function App() {
+  const [Songs, setSongs] = useState([
+  
+      
+        
+      
+  ])  
+
+
+  return (
+    <div>
+      <FacialExpression setSongs={setSongs}/>
+      <MoodSongs Songs={Songs} />
+    </div>
+  );
+}
+
+export default App;
+
